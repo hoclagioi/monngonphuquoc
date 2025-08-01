@@ -2,114 +2,111 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hương Đảo Ngọc – Từ Biển Khơi Đến Gian Bếp Việt</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
-      background: #f4f8f5;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e8f0ff, #ffffff);
       margin: 0;
       padding: 0;
       color: #333;
     }
 
     header {
-      background: #005c4b;
+      background: #006699;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2em;
       margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
     }
 
     .product {
       background: white;
-      border-radius: 16px;
-      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 300px;
       padding: 20px;
-      max-width: 900px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
     }
 
     .product img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 10px;
     }
 
     .product h2 {
-      color: #005c4b;
-      font-size: 1.8em;
+      color: #006699;
       margin-top: 15px;
     }
 
     .product p {
-      font-size: 1em;
+      font-size: 0.95em;
       line-height: 1.6;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #005c4b;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #00846e;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
-      color: #777;
+      padding: 20px;
+      background-color: #f0f0f0;
+      color: #555;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>🌟 Hương Đảo Ngọc – Từ Biển Khơi Đến Gian Bếp Việt</h1>
+  </header>
 
-<header>
-  <h1>Hương Đảo Ngọc – Từ Biển Khơi Đến Gian Bếp Việt</h1>
-  <p>Khám phá ẩm thực đặc sản Phú Quốc – Tinh túy của đảo ngọc</p>
-</header>
+  <div class="container">
+    <!-- Sản phẩm 1: Khô Mực -->
+    <div class="product">
+      <img src="images/kho-muc.jpg" alt="Khô Mực Phú Quốc">
+      <h2>Khô Mực Phú Quốc</h2>
+      <p>Mực được đánh bắt từ biển sâu Phú Quốc, phơi dưới nắng vàng giòn tan. Khi nướng lên tỏa hương thơm nức, mềm ngọt, dai vừa đủ. Đây là món quà biển cả mang đậm tình người miền đảo.</p>
+    </div>
 
-<div class="product">
-  <img src="images/kho-muc.jpg" alt="Khô Mực Phú Quốc">
-  <h2>Khô Mực Phú Quốc</h2>
-  <p>Được phơi ngay tại bãi biển trong nắng vàng tự nhiên, khô mực Phú Quốc nổi tiếng với vị ngọt đậm đà và độ dai vừa phải. Mỗi con mực là một câu chuyện về biển, về những đêm chài lưới dưới trăng của ngư dân đảo ngọc.</p>
-  <a class="btn" href="#">Đặt mua</a>
-</div>
+    <!-- Sản phẩm 2: Nước Mắm -->
+    <div class="product">
+      <img src="images/nuoc-mam.jpg" alt="Nước Mắm Phú Quốc">
+      <h2>Nước Mắm Truyền Thống</h2>
+      <p>Với bí quyết ủ chượp hàng trăm năm, từng giọt nước mắm cốt nguyên chất thơm nồng, đậm vị. Là linh hồn trong bữa cơm Việt, nước mắm Phú Quốc là di sản ẩm thực quý giá.</p>
+    </div>
 
-<div class="product">
-  <img src="images/nuoc-mam.jpg" alt="Nước Mắm Phú Quốc">
-  <h2>Nước Mắm Phú Quốc</h2>
-  <p>Từng giọt nước mắm được ủ suốt 12 tháng trong thùng gỗ bời lời, mang đến màu cánh gián trong vắt và hương vị mặn mòi đậm đà. Là niềm tự hào lâu đời, nước mắm Phú Quốc không chỉ là gia vị – mà là tinh hoa.</p>
-  <a class="btn" href="#">Đặt mua</a>
-</div>
+    <!-- Sản phẩm 3: Rượu Sim -->
+    <div class="product">
+      <img src="images/ruou-sim.jpg" alt="Rượu Sim Phú Quốc">
+      <h2>Rượu Sim Rừng</h2>
+      <p>Từ những trái sim tím mọc tự nhiên trên núi rừng, rượu sim Phú Quốc có vị ngọt nhẹ, hậu cay dịu. Mỗi ly rượu là một chuyến du hành vào hồn đất đảo hoang sơ và quyến rũ.</p>
+    </div>
 
-<div class="product">
-  <img src="images/ruou-sim.jpg" alt="Rượu Sim Phú Quốc">
-  <h2>Rượu Sim Phú Quốc</h2>
-  <p>Chắt lọc từ quả sim tím chín mọng trên rừng núi Phú Quốc, rượu sim mang hương thơm nồng nàn và vị ngọt thanh nhẹ, như chính sự dịu dàng của người con gái đảo. Thích hợp để làm quà hoặc nhâm nhi những đêm se lạnh.</p>
-  <a class="btn" href="#">Đặt mua</a>
-</div>
+    <!-- Sản phẩm 4: Tiêu Sọ -->
+    <div class="product">
+      <img src="images/tieuso.jpg" alt="Tiêu Sọ Phú Quốc">
+      <h2>Tiêu Sọ Phú Quốc</h2>
+      <p>Được chọn lọc kỹ từ những hạt tiêu chín đỏ, tách vỏ thủ công và phơi nắng. Tiêu sọ có mùi thơm mạnh, vị cay sâu – trở thành gia vị yêu thích trong các món nướng và kho.</p>
+    </div>
+  </div>
 
-<div class="product">
-  <img src="images/tieu-so.jpg" alt="Tiêu Sọ Phú Quốc">
-  <h2>Tiêu Sọ Phú Quốc</h2>
-  <p>Khác với tiêu đen, tiêu sọ là phần lõi tinh túy, cay nồng và thơm dịu. Được trồng trên đất đỏ bazan giàu khoáng và thu hoạch thủ công, tiêu sọ Phú Quốc là món quà quý cho các món nướng, hầm, hoặc chế biến cao cấp.</p>
-  <a class="btn" href="#">Đặt mua</a>
-</div>
-
-<footer>
-  &copy; 2025 Đặc Sản Phú Quốc | Liên hệ: 0901 234 567
-</footer>
-
+  <footer>
+    © 2025 – Đặc Sản Phú Quốc. Mỗi sản phẩm là một câu chuyện, một hương vị quê hương.
+  </footer>
 </body>
 </html>
